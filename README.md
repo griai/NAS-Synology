@@ -85,5 +85,21 @@ expected outcome :
 You can now access your pihole homepage using `YourNasIP:8080/admin` url
 
 
+### Build a snikket container ###
 
+(from snikket.org/service/quickstart)
+
+For running a snikket server you first need to have a domain name that is reachable via DNS and that you can create subdomains on.
+Snikket provides a built-in web server that must be reachable on port 80.
+We assume that you are not running any existing websites on the same server.
+Also make sure that the relevant ports are forwarded if you are behind a router or firewall.
+
+As a last step you have to enter some configuration data in the file `snikket/snikket.conf`.
+
+Afterwards, you can simply
+
+```
+cd /volume1/@docker/snikket
+docker-compose up -d
+```
 

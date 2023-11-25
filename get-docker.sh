@@ -64,6 +64,10 @@ echo "Creating pihole working directory"
 mkdir -p "$DOCKER_DIR"/pihole
 curl -L --fail https://raw.githubusercontent.com/griai/NAS-Synology/main/pihole/docker-compose.yml -o "$DOCKER_DIR"/pihole/docker-compose.yml
 
+echo "Creating snikket working directory"
+mkdir -p "$DOCKER_DIR"/snikket
+curl -L --fail https://raw.githubusercontent.com/griai/NAS-Synology/main/snikket/docker-compose.yml -o "$DOCKER_DIR"/snikket/docker-compose.yml
+curl -L --fail https://raw.githubusercontent.com/griai/NAS-Synology/main/snikket/snikket.conf -o "$DOCKER_DIR"/snikket/snikket.conf
 
 echo "Starting docker"
 /usr/local/etc/rc.d/docker.sh start
