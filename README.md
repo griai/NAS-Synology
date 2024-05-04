@@ -103,3 +103,13 @@ cd /volume1/@docker/snikket
 docker-compose up -d
 ```
 
+### Update containers ###
+
+In order to update the docker containers using docker-compose, run
+
+```
+docker-compose pull
+docker-compose up --force-recreate --build -d
+docker image prune -f
+```
+from the respective directories.
