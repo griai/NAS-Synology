@@ -2,7 +2,7 @@ version: '2'
 
 services:
   portainer:
-    image: portainer/portainer
+    image: portainer/portainer-ce
     restart: unless-stopped
     network_mode: host
     volumes:
