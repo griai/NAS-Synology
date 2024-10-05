@@ -7,7 +7,7 @@ NAS Synology DS218 is using a aarch64 architecture that doesnt support official 
 Trying to bypass that by install aarch64 docker binaries using direct ssh connection to the NAS. 
 
 Most of the data is coming from https://gist.github.com/ta264 and https://wiki.servarr.com/docker-arm-synology
-I did my own repo to handle versionning and review the code/script myself.
+I did my own repo to handle versioning and review the code/script myself.
 
 To help understand what is done you can also read this :
 https://dev.to/behainguyen/synology-ds218-unsupported-docker-installation-and-usage-2g1n
@@ -20,7 +20,7 @@ https://dev.to/behainguyen/synology-ds218-unsupported-docker-installation-and-us
 <img width="1370" alt="image" src="https://user-images.githubusercontent.com/61791981/215271153-a2917371-10a1-4ac5-ba5f-7675da348506.png">
 
 
-3) Open a powershell terminal and run this commands: 
+3) Open a terminal and run this command: 
 
 ``` ssh user@yourNasIP -p 22 ```
 
@@ -61,7 +61,7 @@ Expected outcome :
 
 Then go to the portainer homepage to configure it : 
 
-in your browser : youNasIP:9000
+in your browser : YourNasIP:9000
 
 Setup your admin account 
 
@@ -70,7 +70,7 @@ Portainer is now working and should ask to setup the admin password:
 <img width="1710" alt="image" src="https://user-images.githubusercontent.com/61791981/215311158-cb2d81a3-3d42-4811-ad4a-6c6b75dff490.png">
 
 
-### Build a pihle container ###
+### Build a pihole container ###
 
 Now if you want to build pihole image and start a container:
 
