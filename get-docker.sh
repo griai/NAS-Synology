@@ -53,7 +53,7 @@ echo "Creating docker group"
 synogroup --add docker root
 
 echo "Installing docker compose"
-curl -L --fail https://raw.githubusercontent.com/nkoziel/NAS-Synology/main/run.sh -o /usr/local/bin/docker-compose
+curl -L --fail https://raw.githubusercontent.com/griai/NAS-Synology/main/run.sh -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
 echo "Creating portainer working directory"
